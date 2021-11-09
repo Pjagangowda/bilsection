@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <table border="2">
+    
+            <tr>
+                <th>Id</th>
+                <th>Instance_type</th>
+                <th>State</th>
+            </tr>
+            {% for i in data %}
+            <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.instance_type}}</td>
+                <td>{{i.state}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
